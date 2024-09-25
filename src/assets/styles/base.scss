@@ -19,6 +19,11 @@ a {
   color: $color-text;
 }
 
+img {
+  height: auto;
+  max-width: 100%;
+}
+
 section {
   min-height: 100dvh;
   padding: 0 $section-padding;
