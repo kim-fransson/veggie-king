@@ -1,6 +1,7 @@
 <script setup>
 import NavigationBar from './components/NavigationBar.vue';
 import AboutUsSection from './sections/AboutUsSection.vue';
+import GallerySection from './sections/GallerySection.vue';
 import HeroSection from './sections/HeroSection.vue';
 import MenuSection from './sections/MenuSection.vue';
 
@@ -15,6 +16,7 @@ import MenuSection from './sections/MenuSection.vue';
     <HeroSection />
     <AboutUsSection />
     <MenuSection />
+    <GallerySection />
   </main>
 </template>
 

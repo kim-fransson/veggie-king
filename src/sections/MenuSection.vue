@@ -61,8 +61,22 @@ const menuItems = [
     box-shadow: 0px 10px 20px rgba(33, 33, 33, 0.25);
     border-radius: 0px 0px 16px 16px;
 
+    &:hover {
+        >figure>img {
+            scale: 1.20;
+        }
+    }
+
     >figure {
         max-width: 389px;
+        overflow: hidden;
+
+        >img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: scale 200ms ease-in-out;
+        }
     }
 
     >.menu-item-body {

@@ -17,13 +17,19 @@ const images = [
     { src: slide3, alt: 'bowl with avocado & vegetables' },
     { src: slide4, alt: 'bowl with salmon & vegetables' }
 ]
+
+const navigateToMenu = () => {
+    window.location.href = "#menu"
+}
+
 </script>
 
 <template>
     <section id="hero">
         <h1 class="text-headline-xl">Healthy & Fresh Food For You</h1>
         <p class="text-body-2">Created for lovers of healthy, delicious and non-obvious food.</p>
-        <BasicButton>Check menu <img :src="arrowIcon" alt="arrow pointing to the right" /></BasicButton>
+        <BasicButton @click="navigateToMenu()">Check menu <img :src="arrowIcon" alt="arrow pointing to the right" />
+        </BasicButton>
 
         <div class="green-wall">
             <ImageCarousel :images class="carousel" />
