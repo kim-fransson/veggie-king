@@ -1,0 +1,6 @@
+@mixin focus-ring {
+  outline-width: 2px;
+  outline-color: $color-orange-600;
+  outline-style: solid;
+  outline-offset: 2px;
+}

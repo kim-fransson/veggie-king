@@ -1,5 +1,6 @@
 <script setup>
 import NavigationBar from './components/NavigationBar.vue';
+import HeroSection from './sections/HeroSection.vue';
 
 
 
@@ -8,6 +9,9 @@ import NavigationBar from './components/NavigationBar.vue';
 
 <template>
   <NavigationBar />
+  <main>
+    <HeroSection />
+  </main>
 </template>
 
 <style scoped></style>

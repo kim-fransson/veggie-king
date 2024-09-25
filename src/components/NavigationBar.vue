@@ -23,6 +23,7 @@ const links = [{ name: 'about us', href: '#about-us' }, { name: 'menu', href: '#
 <style lang="scss" scoped>
 .container {
     position: fixed;
+    z-index: 100;
     left: 0;
     right: 0;
     background: $color-gray-50;
@@ -34,13 +35,12 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 20px $section-padding;
-    max-width: $app-width;
     margin: 0 auto;
 }
 
 ul {
     display: flex;
-    gap: 40px;
+    gap: 38px;
 }
 
 a {
