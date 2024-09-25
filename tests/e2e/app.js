@@ -1,4 +1,4 @@
-describe('Link navigation', function () {
+describe('Navbar link navigation', function () {
   before((browser) => {
     browser.init()
   })
