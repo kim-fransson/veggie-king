@@ -1,9 +1,13 @@
 <script setup>
+import NavigationBar from './components/NavigationBar.vue';
+
+
+
 
 </script>
 
 <template>
-  <h2 class="text-headline-xl">The Veggie King</h2>
+  <NavigationBar />
 </template>
 
 <style scoped></style>

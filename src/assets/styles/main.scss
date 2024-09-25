@@ -1,7 +1,7 @@
 @import './base.scss';
 
 #app {
-  max-width: 1440px;
+  max-width: $app-width;
   margin: 0 auto;
   font-weight: normal;
 }
