@@ -1,0 +1,55 @@
+// Supports weights 100-900
+@import '@fontsource-variable/raleway';
+
+.text-headline-xl {
+  font-weight: 900;
+  font-size: 61px;
+  line-height: 82px;
+  letter-spacing: 1px;
+}
+
+.text-headline-l {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 47px;
+  letter-spacing: 0.25px;
+}
+
+.text-body {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 34px;
+  letter-spacing: 1px;
+}
+
+.text-body-2 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.text-caption {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
+
+.text-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 29px;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+  .text-headline-xl {
+    font-size: 35px;
+    line-height: 47px;
+    letter-spacing: 0.25px;
+  }
+
+  .text-headline-l {
+    font-size: 25px;
+  }
+}
