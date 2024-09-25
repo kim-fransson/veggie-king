@@ -7,7 +7,6 @@ const props = defineProps(['images'])
 const currentIndex = ref(0);
 
 const slideNext = () => {
-    console.log(currentIndex.value)
     currentIndex.value = (currentIndex.value + 1) % props.images.length;
 }
 

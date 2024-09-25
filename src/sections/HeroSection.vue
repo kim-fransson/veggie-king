@@ -21,7 +21,7 @@ const images = [
 
 <template>
     <section id="hero">
-        <h2 class="text-headline-xl">Healthy & Fresh Food For You</h2>
+        <h1 class="text-headline-xl">Healthy & Fresh Food For You</h1>
         <p class="text-body-2">Created for lovers of healthy, delicious and non-obvious food.</p>
         <BasicButton>Check menu <img :src="arrowIcon" alt="arrow pointing to the right" /></BasicButton>
 
@@ -64,7 +64,7 @@ figure {
     translate: 0 -50%;
 }
 
-h2 {
+h1 {
     max-width: 500px;
     margin-bottom: 10px;
 }

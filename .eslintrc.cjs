@@ -12,6 +12,7 @@ module.exports = {
     ecmaVersion: 'latest'
   },
   env: {
-    jest: true
+    jest: true,
+    nightwatch: true
   }
 }

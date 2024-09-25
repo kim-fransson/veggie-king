@@ -2,7 +2,7 @@
 
 import logo from '@/assets/icons/logo.svg'
 
-const links = [{ name: 'about us', href: '#about-us' }, { name: 'menu', href: '#menu' }, { name: 'contact', href: '#contact' }]
+const links = [{ name: 'about us', href: '#about' }, { name: 'menu', href: '#menu' }, { name: 'contact', href: '#contact' }]
 
 </script>
 
