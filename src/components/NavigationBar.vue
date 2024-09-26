@@ -60,14 +60,24 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px $section-padding;
+
+    padding: 20px $section-padding-mobile;
     margin: 0 auto;
+
+    @media (min-width: $tablet-breakpoint) {
+        padding: 20px $section-padding-tablet;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+        padding: 20px $section-padding-desktop;
+    }
+
 
     >ul {
         display: flex;
         gap: 38px;
 
-        @media (max-width: $mobile-breakpoint) {
+        @media (max-width: $tablet-breakpoint) {
             display: none;
         }
     }
@@ -75,7 +85,7 @@ nav {
     >button {
         display: none;
 
-        @media (max-width: $mobile-breakpoint) {
+        @media (max-width: $tablet-breakpoint) {
             display: flex;
         }
     }
@@ -86,7 +96,7 @@ nav {
     box-shadow: 0px 10px 10px rgba(33, 33, 33, 0.25);
     position: fixed;
     z-index: 90;
-    height: 30%;
+    height: 50%;
     left: 0;
     right: 0;
     display: flex;
@@ -98,7 +108,8 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 80px;
         height: 100%;
     }
 }

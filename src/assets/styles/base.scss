@@ -39,7 +39,15 @@ img {
 
 section {
   min-height: 100dvh;
-  padding: 0 $section-padding;
+  padding: 0 $section-padding-mobile;
+
+  @media (min-width: $tablet-breakpoint) {
+    padding: 0 $section-padding-tablet;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    padding: 0 $section-padding-desktop;
+  }
 }
 
 html {

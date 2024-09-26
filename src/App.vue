@@ -12,12 +12,12 @@ import MenuSection from './sections/MenuSection.vue';
   <NavigationBar />
   <main>
     <HeroSection />
-    <AboutUsSection />
+    <!-- <AboutUsSection />
     <MenuSection />
     <GallerySection />
-    <ContactSection />
+    <ContactSection /> -->
   </main>
-  <FooterBar />
+  <!-- <FooterBar /> -->
 </template>
 
 <style scoped></style>

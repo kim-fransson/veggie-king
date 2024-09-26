@@ -25,7 +25,25 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <img :src="images[currentIndex].src" :alt="images[currentIndex].alt">
+    <figure>
+        <img :src="images[currentIndex].src" :alt="images[currentIndex].alt">
+    </figure>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+figure {
+    width: 386px;
+    height: 335px;
+
+    >img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    @media (min-width: $tablet-breakpoint) {
+        width: 525px;
+        height: 456px;
+    }
+}
+</style>

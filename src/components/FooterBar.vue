@@ -62,7 +62,7 @@ import { links, socials } from '@/config';
 
 footer {
     background: $color-gray-300;
-    padding: 20px $section-padding;
+    padding: 20px $section-padding-desktop;
 }
 
 .divider {
@@ -70,7 +70,7 @@ footer {
     height: 1px;
     margin-top: 40px;
     margin-bottom: 40px;
-    margin-right: -$section-padding;
-    margin-left: -$section-padding;
+    margin-right: -$section-padding-desktop;
+    margin-left: -$section-padding-desktop;
 }
 </style>

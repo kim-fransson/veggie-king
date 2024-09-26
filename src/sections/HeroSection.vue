@@ -42,9 +42,10 @@ const navigateToMenu = () => {
 </template>
 
 <style lang="scss" scoped>
-figure {
+section>figure {
     width: 212px;
     height: 219px;
+
     object-fit: contain;
     position: absolute;
     bottom: 0;
@@ -54,30 +55,47 @@ figure {
 
 .green-wall {
     background: $color-green-600;
-    width: 28%;
+    width: 15%;
     right: 0;
     height: 100%;
-    position: absolute;
+    position: fixed;
+
+    @media (min-width: $tablet-breakpoint) {
+        width: 28%;
+    }
+
 }
 
 .carousel {
     position: absolute;
-    width: 525px;
-    height: 456px;
-    object-fit: contain;
     top: 50%;
-    right: 60%;
-    translate: 0 -50%;
+    translate: -20% -58%;
+
+    @media (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
+        translate: -20% -50%;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+        translate: -70% -50%;
+    }
 }
 
 h1 {
-    max-width: 500px;
+    max-width: 350px;
     margin-bottom: 10px;
+
+    @media (min-width: $tablet-breakpoint) {
+        max-width: 500px;
+    }
 }
 
 p {
-    max-width: 360px;
+    max-width: 241px;
     margin-bottom: 16px;
+
+    @media (min-width: $tablet-breakpoint) {
+        max-width: 360px;
+    }
 }
 
 section {

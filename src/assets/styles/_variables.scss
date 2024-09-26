@@ -22,5 +22,9 @@ $color-text: $color-gray-900;
 
 // Layout
 
-$section-padding: 104px;
-$mobile-breakpoint: 768px;
+$section-padding-desktop: 104px;
+$section-padding-tablet: 48px;
+$section-padding-mobile: 16px;
+
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1280px;
