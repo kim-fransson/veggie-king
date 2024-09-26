@@ -33,10 +33,14 @@ const images = [
 <style lang="scss" scoped>
 .gallery {
     margin-top: 28px;
-    max-height: 624px;
     width: calc(100% + 2 * $section-padding-desktop);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    max-height: 1200px;
+
+    @media (min-width: $tablet-breakpoint) {
+        grid-template-columns: repeat(3, 1fr);
+        max-height: 624px;
+    }
 
     >figure {
         overflow: hidden;

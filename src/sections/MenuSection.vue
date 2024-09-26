@@ -49,8 +49,16 @@ const menuItems = [
 <style lang="scss" scoped>
 .menu-items {
     display: flex;
-    gap: 28px;
-    margin-top: 48px;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+
+
+    @media (min-width: $tablet-breakpoint) {
+        flex-direction: row;
+        gap: 28px;
+        margin-top: 48px;
+    }
 }
 
 .menu-item-card {
@@ -68,7 +76,8 @@ const menuItems = [
     }
 
     >figure {
-        max-width: 389px;
+        max-width: 358px;
+        max-height: 163px;
         overflow: hidden;
 
         >img {
@@ -76,6 +85,12 @@ const menuItems = [
             width: 100%;
             object-fit: cover;
             transition: scale 200ms ease-in-out;
+        }
+
+        @media (min-width: $tablet-breakpoint) {
+            >img {
+                max-height: none;
+            }
         }
     }
 

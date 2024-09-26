@@ -46,23 +46,40 @@ import { links, socials } from '@/config';
 
 .link-list {
     display: flex;
+    flex-direction: column;
     margin-top: 10px;
-    gap: 40px;
+    gap: 12px;
 
     >li>a {
         text-transform: uppercase;
+    }
+
+    @media (min-width: $tablet-breakpoint) {
+        flex-direction: row;
+        gap: 40px;
     }
 }
 
 .content-grid {
     display: grid;
     gap: 40px;
-    grid-template-columns: auto auto minmax(0, 495px);
+
+    @media (min-width: $tablet-breakpoint) {
+        grid-template-columns: auto auto minmax(0, 495px);
+    }
 }
 
 footer {
     background: $color-gray-300;
-    padding: 20px $section-padding-desktop;
+    padding: 20px $section-padding-mobile;
+
+    @media (min-width: $tablet-breakpoint) {
+        padding: 20px $section-padding-tablet;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+        padding: 20px $section-padding-desktop;
+    }
 }
 
 .divider {

@@ -32,10 +32,13 @@ const contactInformation = [
 .contact-information {
     display: grid;
     justify-items: stretch;
-    grid-template-columns: repeat(3, 1fr);
     width: 100%;
     gap: 28px;
     margin-top: 48px;
+
+    @media (min-width: $tablet-breakpoint) {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .contact-card {

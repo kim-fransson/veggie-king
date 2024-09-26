@@ -35,14 +35,14 @@ const navigateToMenu = () => {
             <ImageCarousel :images class="carousel" />
         </div>
 
-        <figure>
+        <figure class="chillies">
             <img :src="chilliesAndPeppers" alt="chillies & black peppers" />
         </figure>
     </section>
 </template>
 
 <style lang="scss" scoped>
-section>figure {
+.chillies {
     width: 212px;
     height: 219px;
 
@@ -57,13 +57,13 @@ section>figure {
     background: $color-green-600;
     width: 15%;
     right: 0;
-    height: 100%;
-    position: fixed;
+    height: 100dvh;
+    position: absolute;
+    overflow: visible;
 
     @media (min-width: $tablet-breakpoint) {
         width: 28%;
     }
-
 }
 
 .carousel {
@@ -100,6 +100,7 @@ p {
 
 section {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: start;
     justify-content: center;
