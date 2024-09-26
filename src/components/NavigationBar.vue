@@ -31,7 +31,8 @@ const toggleMenu = () => {
                 </li>
             </ul>
             <BasicButton @click="toggleMenu()" variant="ghost" aria-label="open menu">
-                <img :src="menuOpen ? closeMenuIcon : menuIcon" width="24" height="24" />
+                <img :src="menuOpen ? closeMenuIcon : menuIcon" width="24" height="24"
+                    :alt="menuOpen ? 'an X' : 'three lines'" />
             </BasicButton>
         </nav>
         <Transition name="menu">

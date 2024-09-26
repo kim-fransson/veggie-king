@@ -9,7 +9,9 @@ import { links, socials } from '@/config';
 <template>
     <footer>
         <ul class="content-grid">
-            <img :src="logo" alt="The veggie king" width="206" height="40" loading="lazy" />
+            <li>
+                <img :src="logo" alt="The veggie king" width="206" height="40" loading="lazy" />
+            </li>
 
             <ul class="link-list">
                 <li v-for="{ name, href } in links" :key="name">
@@ -17,18 +19,18 @@ import { links, socials } from '@/config';
                 </li>
             </ul>
 
-            <div>
+            <li>
                 <p class="text-body-2">Stay up to date with our new openings, upcoming events, seasonal specials and
                     promotions. Check our
                     socials.</p>
                 <ul class="social-list">
                     <li v-for="social in socials" :key="social.name">
-                        <a :href="social.href">
+                        <a :aria-label="social.name" :href="social.href">
                             <component :is="social.icon"></component>
                         </a>
                     </li>
                 </ul>
-            </div>
+            </li>
         </ul>
 
         <div class="divider" />
