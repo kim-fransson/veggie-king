@@ -24,7 +24,7 @@ const images = [
 
         <div class="gallery">
             <figure v-for="(image, index) in images" :key="`gallery-image-${index}`">
-                <img :src="image.src" :alt="image.alt" />
+                <img loading="lazy" :src="image.src" :alt="image.alt" />
             </figure>
         </div>
     </section>

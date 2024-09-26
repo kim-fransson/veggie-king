@@ -9,7 +9,7 @@ import { links, socials } from '@/config';
 <template>
     <footer>
         <ul class="content-grid">
-            <img :src="logo" alt="The veggie king" width="206" height="40" />
+            <img :src="logo" alt="The veggie king" width="206" height="40" loading="lazy" />
 
             <ul class="link-list">
                 <li v-for="{ name, href } in links" :key="name">

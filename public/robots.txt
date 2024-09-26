@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://www.foodie-go.made-by-kim.com/sitemap.xml

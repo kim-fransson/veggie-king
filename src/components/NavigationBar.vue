@@ -37,7 +37,7 @@ const toggleMenu = () => {
         <Transition name="menu">
             <div v-if="menuOpen" class="menu-content">
                 <ul class="menu-links">
-                    <li v-for="{ name, href } in links" :key="name">
+                    <li @click="toggleMenu" v-for="{ name, href } in links" :key="name">
                         <a class="text-caption" :href>{{ name }}</a>
                     </li>
                 </ul>

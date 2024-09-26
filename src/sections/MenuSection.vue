@@ -34,7 +34,7 @@ const menuItems = [
             <li v-for="item in menuItems" :key="item.name">
                 <div class="menu-item-card">
                     <figure>
-                        <img :src="item.img.src" :alt="item.img.alt" />
+                        <img :src="item.img.src" :alt="item.img.alt" loading="lazy" />
                     </figure>
                     <div class="menu-item-body">
                         <h2 class="text-headline-m">{{ item.name }}</h2>

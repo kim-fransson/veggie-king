@@ -17,7 +17,7 @@ import sectionImage from '@/assets/images/about-us-section-food.png'
         </div>
 
         <div class="green-ball">
-            <img :src="sectionImage" alt="bowl of chickpeas and vegetables" />
+            <img :src="sectionImage" alt="bowl of chickpeas and vegetables" loading="lazy" />
         </div>
     </section>
 </template>
