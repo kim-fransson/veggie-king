@@ -46,7 +46,7 @@ import { links, socials } from '@/config';
 
 .link-list {
     display: flex;
-    margin-top: 8px;
+    margin-top: 10px;
     gap: 40px;
 
     >li>a {

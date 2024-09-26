@@ -49,7 +49,7 @@
   letter-spacing: 1px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: $mobile-breakpoint) {
   .text-headline-xl {
     font-size: 35px;
     line-height: 47px;

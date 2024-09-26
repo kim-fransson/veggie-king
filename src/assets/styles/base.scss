@@ -16,7 +16,9 @@ ul {
 }
 
 a {
+  display: flex;
   text-decoration: none;
+  text-transform: uppercase;
   color: $color-text;
   cursor: pointer;
   transition: color 200ms ease-in-out;
@@ -24,6 +26,9 @@ a {
   &:hover {
     color: $color-green-600;
     fill: $color-green-600;
+  }
+  &:focus-visible {
+    @include focus-ring;
   }
 }
 

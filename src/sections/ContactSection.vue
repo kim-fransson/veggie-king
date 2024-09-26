@@ -31,6 +31,7 @@ const contactInformation = [
 <style lang="scss" scoped>
 .contact-information {
     display: grid;
+    justify-items: stretch;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     gap: 28px;
@@ -38,7 +39,6 @@ const contactInformation = [
 }
 
 .contact-card {
-    max-width: 389px;
     background: $color-white;
     box-shadow: 0px 10px 20px rgba(33, 33, 33, 0.25);
     border-radius: 95.5px;

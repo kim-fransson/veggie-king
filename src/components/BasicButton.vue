@@ -1,26 +1,41 @@
+<script setup>
+
+const { variant = 'basic' } = defineProps(['variant'])
+
+</script>
+
 <template>
-    <button class="text-button">
+    <button class="text-button" :class="variant">
         <slot></slot>
     </button>
 </template>
 
 <style lang="scss" scoped>
 button {
-    padding: 9px 16px;
     border: none;
-    display: inline-block;
     text-decoration: none;
     display: flex;
+    align-items: center;
+    justify-content: center;
     outline: none;
     gap: 10px;
-    background: $color-orange-600;
-    border-radius: 8px;
+
     cursor: pointer;
     transition: background 200ms ease-in-out;
 }
 
-button:hover {
-    background: $color-orange-500;
+.basic {
+    background: $color-orange-600;
+    border-radius: 8px;
+    padding: 9px 16px;
+
+    &:hover {
+        background: $color-orange-500;
+    }
+}
+
+.ghost {
+    background: none;
 }
 
 button:focus-visible {
